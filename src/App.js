@@ -1,14 +1,13 @@
-import './App.css';
+import './scss/app.scss';
+
+import Header from './components/Header';
+//import SideBar from './components/SideBar';
 
 function App() {
   return (
     <div className="App">
-      <section>
-        <div>Hello World</div>
-        <span>
-          <p>Works</p>
-        </span>
-      </section>
+      <Header />
+      {/* <SideBar /> */}
     </div>
   );
 }

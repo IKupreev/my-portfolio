@@ -1,13 +1,13 @@
 import './scss/app.scss';
 
 import Header from './components/Header';
-//import SideBar from './components/SideBar';
+import SideBar from './components/SideBar';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      {/* <SideBar /> */}
+      <SideBar />
     </div>
   );
 }

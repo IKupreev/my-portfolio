@@ -2,12 +2,20 @@ import './scss/app.scss';
 
 import Header from './components/Header';
 import SideBar from './components/SideBar';
+import About from './components/About';
 
 function App() {
   return (
-    <div className="App">
+    <div class="App">
       <Header />
-      <SideBar />
+      <div class="App__container">
+        <div class="App__side-bar">
+          <SideBar />
+        </div>
+        <div class="App__About">
+          <About />
+        </div>
+      </div>
     </div>
   );
 }

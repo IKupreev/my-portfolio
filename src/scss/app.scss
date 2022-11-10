@@ -6,3 +6,28 @@
 body {
     background-color: $background;
 }
+
+.App {
+
+    // .App__container
+
+    &__container {
+        display: flex;
+        height: 100%;
+    }
+
+    // .App__side-bar
+
+    &__side-bar {
+        min-height: 100%;
+        width: 271px;
+        flex: 0 0 auto;
+    }
+
+    // .App__About
+
+    &__About {
+        flex: 1 1 auto;
+    }
+}
+

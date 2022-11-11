@@ -5,7 +5,7 @@ function SideBar() {
         <div class="about-me__photo">
           <img src="/assets/sideBar/photo.jpg" alt="avatar" class="about-me__avatar" />
         </div>
-        
+
         <h1 class="about-me__name">Igor Kupreev</h1>
         <span class="about-me__job">Frontend Developer</span>
         <p class="about-me__description">

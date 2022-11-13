@@ -34,7 +34,14 @@ function About() {
             </div>
           </div>
         </div>
-        <h1 class="about__title">Qualification</h1>
+        <div class="about__body">
+          <h1 class="about__title">Qualification</h1>
+          <span class="about__label">My personal journey</span>
+        </div>
+        <div class="about__tabs">
+          {/* закончил тут */}
+          <button class="about__btn-tab" />
+        </div>
         <div class="about__about-cards">
           <div class="about__card">
             <Icons name="exp" color="#383838" width="17" height="20" className="about__icon" />

@@ -39,12 +39,31 @@ function About() {
           <span class="about__label">My personal journey</span>
         </div>
         <div class="about__tabs">
-          <button class="about__btn-educatw">Education</button>
+          <button class="about__btn-educat">Education</button>
           <button class="about__btn-work">Work</button>
         </div>
-        <span class="about__line"></span>
+        <div class="about__line"></div>
         <section class="about__qualification-cards">
-          <main class="about__item"></main>
+          <main class="about__item">
+            <div class="about__specialization">Computer Engineer</div>
+            <div class="about__educational-institution">Peru - University</div>
+            <span class="about__data">2009 - 2014</span>
+          </main>
+          <main class="about__item">
+            <div class="about__specialization">Web Design</div>
+            <div class="about__educational-institution">Spain - Institute</div>
+            <span class="about__data">2014 - 2017</span>
+          </main>
+          <main class="about__item">
+            <div class="about__specialization">Web Development</div>
+            <div class="about__educational-institution">Peru - Institute</div>
+            <span class="about__data">2017 - 2019</span>
+          </main>
+          <main class="about__item">
+            <div class="about__specialization">Master UI / UX</div>
+            <div class="about__educational-institution">Peru - Institute</div>
+            <span class="about__data">2019 - 2021</span>
+          </main>
         </section>
       </div>
     </section>

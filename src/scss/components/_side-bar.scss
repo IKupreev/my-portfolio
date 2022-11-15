@@ -1,9 +1,10 @@
 .about-me {
 
-  border-bottom: 1px solid $border-line;
-  border-left: 1px solid $border-line;
-  border-right: 1px solid $border-line;
+    border-bottom: 1px solid $border-line;
+    border-left: 1px solid $border-line;
+    border-right: 1px solid $border-line;
     padding: 50px 46px;
+    min-height: calc(100vh - 76px);
 
     &__wrapper {
       display: flex;

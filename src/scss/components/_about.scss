@@ -2,6 +2,7 @@
     border-bottom: 1px solid $border-line;
     border-right: 1px solid $border-line;
     padding: 0 50px;
+    min-height: calc(100vh - 76px);
     // .about__wrapper
 
     &__wrapper {

@@ -3,7 +3,7 @@ function SideBar() {
     <section class="about-me">
       <div class="wrapper about-me__wrapper">
         <div class="about-me__photo">
-          <img src="/assets/sideBar/photo.jpg" alt="avatar" class="about-me__avatar" />
+          <img src="" alt="avatar" class="about-me__avatar" />
         </div>
 
         <h1 class="about-me__name">Igor Kupreev</h1>

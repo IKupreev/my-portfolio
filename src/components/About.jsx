@@ -13,21 +13,21 @@ function About() {
         </p>
         <div class="about__about-cards">
           <div class="about__card">
-            <Icons name="exp" color="#383838" width="17" height="20" className="about__icon" />
+            <Icons name="exp" width="17" height="20" className="about__icon" />
             <div class="about__info">
               <span class="about__subtitle">Years experience</span>
               <span class="about__count">6</span>
             </div>
           </div>
           <div class="about__card">
-            <Icons name="proj" color="#383838" width="20" height="20" className="about__icon" />
+            <Icons name="proj" width="20" height="20" className="about__icon" />
             <div class="about__info">
               <span class="about__subtitle">Completed projects</span>
               <span class="about__count">20</span>
             </div>
           </div>
           <div class="about__card">
-            <Icons name="work" color="#383838" width="20" height="19" className="about__icon" />
+            <Icons name="companies" width="20" height="19" className="about__icon" />
             <div class="about__info">
               <span class="about__subtitle">Companies worked</span>
               <span class="about__count">4</span>

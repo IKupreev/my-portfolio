@@ -1,11 +1,16 @@
 .about {
     border-bottom: 1px solid $border-line;
     border-right: 1px solid $border-line;
-    padding: 0 50px;
+    padding: 0 50px 53px 50px;
     min-height: calc(100vh - 76px);
+    height: 100%;
     // .about__wrapper
 
     &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
 
     }
 
@@ -107,11 +112,20 @@
     // .about__btn-educatw
 
     &__btn-educat {
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: $heading-text;
     }
 
     // .about__btn-work
 
     &__btn-work {
+        margin-left: 126px;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: $heading-text;
     }
 
     // .about__line

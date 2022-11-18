@@ -5,9 +5,11 @@ function SideBar() {
         <div class="about-me__photo">
           <img src="" alt="avatar" class="about-me__avatar" />
         </div>
+        <div class="about-me__name-job">
+          <h1 class="about-me__name">Igor Kupreev</h1>
+          <span class="about-me__job">Frontend Developer</span>
+        </div>
 
-        <h1 class="about-me__name">Igor Kupreev</h1>
-        <span class="about-me__job">Frontend Developer</span>
         <p class="about-me__description">
           High level experience in web design and development knowledge.
         </p>

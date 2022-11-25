@@ -1,7 +1,7 @@
 .about {
     border-bottom: 1px solid $border-line;
     border-right: 1px solid $border-line;
-    padding: 0 50px 53px 50px;
+    padding: 20px 50px 53px;
     min-height: calc(100vh - 76px);
     height: 100%;
     // .about__wrapper
@@ -116,16 +116,26 @@
         font-size: 1.6rem;
         line-height: 2.4rem;
         color: $heading-text;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
     }
 
     // .about__btn-work
 
     &__btn-work {
+        cursor: pointer;
         margin-left: 126px;
         font-weight: 600;
         font-size: 1.6rem;
         line-height: 2.4rem;
         color: $heading-text;
+        background-color: transparent;
+        border: none;
+    }
+
+    &__btn-icon {
+        margin-right: 5px;
     }
 
     // .about__line

@@ -1,3 +1,5 @@
+import SocialLinksBlock from './SocialLinksBlock';
+
 function SideBar() {
   return (
     <section className="about-me">
@@ -13,17 +15,7 @@ function SideBar() {
         <p className="about-me__description">
           High level experience in web design and development knowledge.
         </p>
-        <div className="about-me__social-links">
-          <a href="#" className="about-me__social-link social-link">
-            <img src="/assets/sideBar/TW.svg" alt="twitter" className="social-link__icon" />
-          </a>
-          <a href="#" className="about-me__social-link social-link">
-            <img src="/assets/sideBar/FB.svg" alt="facebook" className="social-link__icon" />
-          </a>
-          <a href="#" className="about-me__social-link social-link">
-            <img src="/assets/sideBar/Github.svg" alt="github" className="social-link__icon" />
-          </a>
-        </div>
+        <SocialLinksBlock />
         <button className="about-me__contact-me-btn">Contact Me</button>
       </div>
     </section>

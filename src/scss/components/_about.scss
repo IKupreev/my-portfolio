@@ -107,6 +107,7 @@
     // .about__tabs
 
     &__tabs {
+        margin-top: 13px;
     }
 
     // .about__btn-educatw
@@ -194,9 +195,11 @@
 
     &__data {
         margin-top: 5px;
+        margin-left: 7px;
         font-weight: 400;
         font-size: 1.2rem;
         line-height: 1.8rem;
         color: $info-text;
+        position: relative;
     }
 }

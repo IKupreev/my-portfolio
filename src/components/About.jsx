@@ -2,7 +2,13 @@ import Icons from './Icons';
 
 import React from 'react';
 
+import educationsCard from '../assets/education-card.json';
+import Qualifications from './Qualifications';
+
+console.log(educationsCard);
 function About() {
+  const [activeTab, SetActiveTab] = React.useState(0);
+
   return (
     <section className="about">
       <div className="about__wrapper">
@@ -42,41 +48,38 @@ function About() {
             <span className="about__label">My personal journey</span>
           </div>
           <div className="about__tabs">
-            <button className="about__btn-educat">
-              <Icons name="educations" width="26" height="19" className="about__btn-icon" />
+            <button
+              onClick={() => SetActiveTab(0)}
+              className={activeTab === 0 ? 'about__btn-educat active' : 'about__btn-educat'}
+            >
+              <Icons
+                name="educations"
+                width="26"
+                height="19"
+                color={activeTab === 0 ? '#5671A6' : ''}
+                className="about__btn-icon"
+              />
               <span>Education</span>
             </button>
-            <button className="about__btn-work">
-              <Icons name="work" width="26" height="19" className="about__btn-icon" />
+            <button
+              onClick={() => SetActiveTab(1)}
+              className={activeTab === 1 ? 'about__btn-work active' : 'about__btn-work'}
+            >
+              <Icons
+                name="work"
+                width="26"
+                height="19"
+                color={activeTab === 1 ? '#5671A6' : ''}
+                className="about__btn-icon"
+              />
               <span>Work</span>
             </button>
           </div>
           <div className="about__line"></div>
           <section className="about__qualification-cards">
-            <main className="about__item">
-              <div className="about__specialization">Computer Engineer</div>
-              <div className="about__educational-institution">Peru - University</div>
-              <Icons name="calendar" width="15" height="16" className="about__calendar-icon" />
-              <span className="about__data">2009 - 2014</span>
-            </main>
-            <main className="about__item">
-              <div className="about__specialization">Web Design</div>
-              <div className="about__educational-institution">Spain - Institute</div>
-              <Icons name="calendar" width="15" height="16" className="about__calendar-icon" />
-              <span className="about__data">2014 - 2017</span>
-            </main>
-            <main className="about__item">
-              <div className="about__specialization">Web Development</div>
-              <div className="about__educational-institution">Peru - Institute</div>
-              <Icons name="calendar" width="15" height="16" className="about__calendar-icon" />
-              <span className="about__data">2017 - 2019</span>
-            </main>
-            <main className="about__item">
-              <div className="about__specialization">Master UI / UX</div>
-              <div className="about__educational-institution">Peru - Institute</div>
-              <Icons name="calendar" width="15" height="16" className="about__calendar-icon" />
-              <span className="about__data">2019 - 2021</span>
-            </main>
+            {educationsCard.map((obj) => (
+              <Qualifications {...obj} />
+            ))}
           </section>
         </section>
       </div>

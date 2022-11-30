@@ -1,6 +1,6 @@
-import twitterSVG from '../assets/sideBar/TW.svg';
-import faceBookSVG from '../assets/sideBar/FB.svg';
-import githubSVG from '../assets/sideBar/Github.svg';
+import twitterSVG from '../assets/img/sideBar/TW.svg';
+import faceBookSVG from '../assets/img/sideBar/FB.svg';
+import githubSVG from '../assets/img/sideBar/Github.svg';
 
 function SocialLinksBlock() {
   return (

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "specilization": "Computer Engineer",
+        "education": "Krasnojarsk - University",
+        "data": "2009 - 2014"
+    },
+    {
+        "id": 1,
+        "specilization": "Web Design",
+        "education": "Spain - Institute",
+        "data": "2014 - 2017"
+    },
+    {
+        "id": 2,
+        "specilization": "Web Development",
+        "education": "Peru - Institute",
+        "data": "2017 - 2019"
+    },
+    {
+        "id": 3,
+        "specilization": "Master UI / UX",
+        "education": "Peru - University",
+        "data": "2019 - 2021"
+    }
+]

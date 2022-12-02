@@ -3,9 +3,11 @@ import Icons from './Icons';
 import React from 'react';
 
 import educationsCard from '../assets/education-card.json';
-import Qualifications from './Qualifications';
+import workCard from '../assets/work-card.json';
 
-console.log(educationsCard);
+import Qualifications from './Qualifications';
+import Works from './Works';
+
 function About() {
   const [activeTab, SetActiveTab] = React.useState(0);
 
@@ -77,9 +79,9 @@ function About() {
           </div>
           <div className="about__line"></div>
           <section className="about__qualification-cards">
-            {educationsCard.map((obj) => (
-              <Qualifications {...obj} />
-            ))}
+            {activeTab === 0
+              ? educationsCard.map((obj) => <Qualifications key={obj.id} {...obj} />)
+              : workCard.map((obj) => <Works key={obj.id} {...obj} />)}
           </section>
         </section>
       </div>

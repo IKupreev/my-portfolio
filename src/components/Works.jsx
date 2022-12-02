@@ -2,7 +2,7 @@ import React from 'react';
 
 import Icons from './Icons';
 
-function Qualifications({ specilization, location, data }) {
+function Works({ specilization, location, data }) {
   return (
     <main className="about__item">
       <div className="about__specialization">{specilization}</div>
@@ -13,4 +13,4 @@ function Qualifications({ specilization, location, data }) {
   );
 }
 
-export default Qualifications;
+export default Works;

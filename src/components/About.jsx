@@ -3,8 +3,9 @@ import Icons from './Icons';
 import React from 'react';
 
 //import cardItem from './Cards/cardItem';
-import CardItem from './Cards/CardItem';
+import QualificationCards from './Cards/QualificationCards';
 import Skeleton from './Cards/SkeletonCards';
+import AboutCards from './Cards/AboutCards';
 
 function About() {
   const [activeTab, SetActiveTab] = React.useState(0);
@@ -30,6 +31,8 @@ function About() {
       });
   }, []);
 
+  let countWorked = workItems.length;
+
   return (
     <section className="about">
       <div className="about__wrapper">
@@ -39,29 +42,9 @@ function About() {
             Web developer, with extensive knowledge and years of experience, working in web
             technologies and UI/UX design, delivering quality work.
           </p>
-          <div className="about__about-cards">
-            <div className="about__card">
-              <Icons name="exp" width="17" height="20" className="about__icon" />
-              <div className="about__info">
-                <span className="about__subtitle">Years experience</span>
-                <span className="about__count">6</span>
-              </div>
-            </div>
-            <div className="about__card">
-              <Icons name="proj" width="20" height="20" className="about__icon" />
-              <div className="about__info">
-                <span className="about__subtitle">Completed projects</span>
-                <span className="about__count">20</span>
-              </div>
-            </div>
-            <div className="about__card">
-              <Icons name="companies" width="20" height="19" className="about__icon" />
-              <div className="about__info">
-                <span className="about__subtitle">Companies worked</span>
-                <span className="about__count">4</span>
-              </div>
-            </div>
-          </div>
+          <section className="about__about-cards">
+            <AboutCards countWorked={countWorked} />
+          </section>
         </section>
         <section className="about__bottomBlock">
           <div className="about__body">
@@ -99,8 +82,8 @@ function About() {
           <div className="about__line"></div>
           <section className="about__qualification-cards">
             {activeTab === 0
-              ? educationItems.map((obj) => <CardItem key={obj.id} {...obj} />)
-              : workItems.map((obj) => <CardItem key={obj.id} {...obj} />)}
+              ? educationItems.map((obj) => <QualificationCards key={obj.id} {...obj} />)
+              : workItems.map((obj) => <QualificationCards key={obj.id} {...obj} />)}
           </section>
         </section>
       </div>

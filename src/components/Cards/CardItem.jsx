@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Icons from './Icons';
+import Icons from '../Icons';
 
-function Works({ specilization, location, data }) {
+function CardItem({ specilization, location, data }) {
   return (
     <main className="about__item">
       <div className="about__specialization">{specilization}</div>
@@ -13,4 +13,4 @@ function Works({ specilization, location, data }) {
   );
 }
 
-export default Works;
+export default CardItem;

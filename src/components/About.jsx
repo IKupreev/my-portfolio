@@ -2,8 +2,9 @@ import Icons from './Icons';
 
 import React from 'react';
 
-import Qualifications from './Qualifications';
-import Works from './Works';
+//import cardItem from './Cards/cardItem';
+import CardItem from './Cards/CardItem';
+import Skeleton from './Cards/SkeletonCards';
 
 function About() {
   const [activeTab, SetActiveTab] = React.useState(0);
@@ -12,23 +13,22 @@ function About() {
 
   React.useEffect(() => {
     fetch('https://638c8f9feafd555746a8fe43.mockapi.io/educations')
-    .then((res) => {
+      .then((res) => {
         return res.json();
       })
-        .then((arr) => {
-          setEducationItems(arr);
-        });
+      .then((arr) => {
+        setEducationItems(arr);
+      });
   }, []);
-    React.useEffect(() => {
-      fetch('https://638c8f9feafd555746a8fe43.mockapi.io/works')
+  React.useEffect(() => {
+    fetch('https://638c8f9feafd555746a8fe43.mockapi.io/works')
       .then((res) => {
-          return res.json();
-        })
-          .then((arr) => {
-            setWorkItems(arr);
-          });
-    }, []);
-
+        return res.json();
+      })
+      .then((arr) => {
+        setWorkItems(arr);
+      });
+  }, []);
 
   return (
     <section className="about">
@@ -99,8 +99,8 @@ function About() {
           <div className="about__line"></div>
           <section className="about__qualification-cards">
             {activeTab === 0
-              ? educationItems.map((obj) => <Qualifications key={obj.id} {...obj} />)
-              : workItems.map((obj) => <Works key={obj.id} {...obj} />)}
+              ? educationItems.map((obj) => <CardItem key={obj.id} {...obj} />)
+              : workItems.map((obj) => <CardItem key={obj.id} {...obj} />)}
           </section>
         </section>
       </div>

@@ -11,6 +11,8 @@ function About() {
   const [activeTab, SetActiveTab] = React.useState(0);
   const [workItems, setWorkItems] = React.useState([]);
   const [educationItems, setEducationItems] = React.useState([]);
+  let [minData, setminData] = React.useState(0);
+  let [maxData, setmaxData] = React.useState(0);
 
   React.useEffect(() => {
     fetch('https://638c8f9feafd555746a8fe43.mockapi.io/educations')
@@ -28,8 +30,16 @@ function About() {
       })
       .then((arr) => {
         setWorkItems(arr);
+        let dataStart = [];
+        let dataEnd = [];
+        for (let data in arr) {
+          dataStart[data] = arr[data].dataStart;
+          dataEnd[data] = arr[data].dataEnd;
+        }
+        setminData(Math.min.apply(null, dataStart));
+        setmaxData(Math.max.apply(null, dataEnd));
       });
-  }, []);
+  }, [maxData, minData]);
 
   let countWorked = workItems.length;
 
@@ -43,7 +53,7 @@ function About() {
             technologies and UI/UX design, delivering quality work.
           </p>
           <section className="about__about-cards">
-            <AboutCards countWorked={countWorked} />
+            <AboutCards countWorked={countWorked} minData={minData} maxData={maxData} />
           </section>
         </section>
         <section className="about__bottomBlock">

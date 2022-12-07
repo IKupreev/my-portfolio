@@ -2,14 +2,14 @@ import React from 'react';
 
 import Icons from '../Icons';
 
-function AboutCards({ countWorked }) {
+function AboutCards({ countWorked, minData, maxData }) {
   return (
     <>
       <div className="about__card">
         <Icons name="exp" width="17" height="20" className="about__icon" />
         <div className="about__info">
           <span className="about__subtitle">Years experience</span>
-          <span className="about__count">6</span>
+          <span className="about__count">{maxData - minData}</span>
         </div>
       </div>
       <div className="about__card">

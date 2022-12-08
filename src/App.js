@@ -6,13 +6,13 @@ import About from './components/About';
 
 function App() {
   return (
-    <div class="App">
+    <div className="App">
       <Header />
-      <div class="App__container">
-        <div class="App__side-bar">
+      <div className="App__container">
+        <div className="App__side-bar">
           <SideBar />
         </div>
-        <div class="App__About">
+        <div className="App__About">
           <About />
         </div>
       </div>

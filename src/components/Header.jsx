@@ -1,43 +1,31 @@
 function Header() {
   return (
-  <header class="header">
-    <div class="wrapper header__wrapper">
-      <a href="#" class="header__logo-block">
-        <span>Igor Kupreev</span>
-      </a>
-      <div class="header__nav-block">
-        <nav class="header__main-nav">
-          <a 
-            href="#"
-            class="header__link"
-            >
+    <header className="header">
+      <div className="wrapper header__wrapper">
+        <a href="#" className="header__logo-block">
+          <span>Igor Kupreev</span>
+        </a>
+        <div className="header__nav-block">
+          <nav className="header__main-nav">
+            <a href="#" className="header__link">
               ABOUT
             </a>
-          <a 
-            href="#"
-            class="header__link"
-            >
+            <a href="#" className="header__link">
               SKILLS
             </a>
-          <a 
-            href="#"
-            class="header__link"
-            >
+            <a href="#" className="header__link">
               SERVICES
             </a>
-          <a 
-            href="#"
-            class="header__link"
-            >
+            <a href="#" className="header__link">
               PORTFOLIO
             </a>
-        </nav>
-        <div class="header__night-switcher">
-          <button class="header__night-switcher-btn"></button>
+          </nav>
+          <div className="header__night-switcher">
+            <button className="header__night-switcher-btn"></button>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
   );
 }
 

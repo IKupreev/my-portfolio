@@ -32,12 +32,20 @@ function About() {
         setWorkItems(arr);
         let dataStart = [];
         let dataEnd = [];
+        let yearNow;
         for (let data in arr) {
           dataStart[data] = arr[data].dataStart;
           dataEnd[data] = arr[data].dataEnd;
+          if (dataEnd[data] === '*') {
+            yearNow = new Date().getFullYear();
+          }
         }
         setminData(Math.min.apply(null, dataStart));
-        setmaxData(Math.max.apply(null, dataEnd));
+        if (yearNow) {
+          setmaxData(yearNow);
+        } else {
+          setmaxData(Math.max.apply(null, dataEnd));
+        }
       });
   }, [maxData, minData]);
 

@@ -11,6 +11,8 @@ function About() {
   const [activeTab, SetActiveTab] = React.useState(0);
   const [workItems, setWorkItems] = React.useState([]);
   const [educationItems, setEducationItems] = React.useState([]);
+  const [isLoading, setisLoading] = React.useState(true);
+
   let [minData, setminData] = React.useState(0);
   let [maxData, setmaxData] = React.useState(0);
 
@@ -30,6 +32,7 @@ function About() {
       })
       .then((arr) => {
         setWorkItems(arr);
+        setisLoading(false);
         let dataStart = [];
         let dataEnd = [];
         let yearNow;
@@ -99,7 +102,9 @@ function About() {
           </div>
           <div className="about__line"></div>
           <section className="about__qualification-cards">
-            {activeTab === 0
+            {isLoading
+              ? [...new Array(4)].map((_, index) => <Skeleton key={index} />)
+              : activeTab === 0
               ? educationItems.map((obj) => <QualificationCards key={obj.id} {...obj} />)
               : workItems.map((obj) => <QualificationCards key={obj.id} {...obj} />)}
           </section>

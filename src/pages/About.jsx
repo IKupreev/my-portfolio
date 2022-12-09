@@ -1,11 +1,10 @@
-import Icons from './Icons';
+import Icons from '../components/Icons';
 
 import React from 'react';
 
-//import cardItem from './Cards/cardItem';
-import QualificationCards from './Cards/QualificationCards';
-import Skeleton from './Cards/SkeletonCards';
-import AboutCards from './Cards/AboutCards';
+import QualificationCards from '../components/Cards/QualificationCards';
+import Skeleton from '../components/Cards/SkeletonCards';
+import AboutCards from '../components/Cards/AboutCards';
 
 function About() {
   const [activeTab, SetActiveTab] = React.useState(0);

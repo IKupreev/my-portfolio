@@ -1,0 +1,44 @@
+.skillsBlock
+{
+    width: 170px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    &:not(:last-child)
+    {
+      margin-right: 33px;
+    }
+    z-index: 4;
+
+    .icon {
+        margin-left: 10px;
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10px;
+        z-index: 2;
+        h3{
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: #383838;
+        }
+
+        label {
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: #616161;
+        }
+    }
+
+    .line {
+        width: 170px;
+        height: 50%;
+        border-radius: 0 0 5px 5px;
+        background: #CC985B;
+    }
+}

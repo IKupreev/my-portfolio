@@ -1,8 +1,15 @@
 import './scss/app.scss';
 
+import {
+  Routes,
+  Route
+} from "react-router-dom";
+
 import Header from './components/Header';
 import SideBar from './components/SideBar';
-import About from './components/About';
+import About from './pages/About';
+import Skills from './pages/Skills';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -13,7 +20,12 @@ function App() {
           <SideBar />
         </div>
         <div className="App__About">
-          <About />
+          <Routes>
+            <Route path='/' element= {<About />}/>
+            <Route path='/skills' element= {<Skills />}/>
+            <Route path='*' element= {<NotFound />}/>
+          </Routes>
+          
         </div>
       </div>
     </div>

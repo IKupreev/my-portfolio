@@ -15,12 +15,12 @@ function Header() {
             <Link to="/skills" className="header__link">
               SKILLS
             </Link>
-            <a href="#" className="header__link">
+            {/* <a href="#" className="header__link">
               SERVICES
-            </a>
-            <a href="#" className="header__link">
+            </a> */}
+            <Link to="/portfolio" className="header__link">
               PORTFOLIO
-            </a>
+            </Link>
           </nav>
           <div className="header__night-switcher">
             <button className="header__night-switcher-btn"></button>

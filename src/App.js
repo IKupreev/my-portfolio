@@ -10,6 +10,7 @@ import SideBar from './components/SideBar';
 import About from './pages/About';
 import Skills from './pages/Skills';
 import NotFound from './pages/NotFound';
+import Portfolio from './pages/Portfolio';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Routes>
             <Route path='/' element= {<About />}/>
             <Route path='/skills' element= {<Skills />}/>
+            <Route path='/portfolio' element= {<Portfolio />}/>
             <Route path='*' element= {<NotFound />}/>
           </Routes>
           
